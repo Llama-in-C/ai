@@ -1,6 +1,6 @@
 {
-  "name": "@ai-sdk/aphrodite-engine",
-  "version": "0.0.1",
+  "name": "@ai-sdk/aphrodite-engine-provider",
+  "version": "0.1.0",
   "license": "AGPL-3.0",
   "sideEffects": false,
   "main": "./dist/index.js",
