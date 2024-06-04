@@ -1,5 +1,5 @@
 {
-  "name": "@ai-sdk/aphrodite-engine-provider",
+  "name": "aphrodite-engine-provider",
   "version": "0.1.0",
   "license": "AGPL-3.0",
   "sideEffects": false,
@@ -51,12 +51,14 @@
   "homepage": "https://sdk.vercel.ai/docs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vercel/ai.git"
+    "url": "git+https://github.com/Llama-in-C/ai.git"
   },
   "bugs": {
-    "url": "https://github.com/vercel/ai/issues"
+    "url": "https://github.com/Llama-in-C/ai/issues"
   },
   "keywords": [
-    "ai"
+    "ai",
+    "inference",
+    "aphrodite"
   ]
 }
