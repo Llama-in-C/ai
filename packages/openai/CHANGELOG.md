@@ -1,5 +1,72 @@
 # @ai-sdk/openai
 
+## 0.0.28
+
+### Patch Changes
+
+- f9db8fd6: feat (@ai-sdk/openai): add parallelToolCalls setting
+
+## 0.0.27
+
+### Patch Changes
+
+- fc9552ec: fix (@ai-sdk/azure): allow for nullish delta
+
+## 0.0.26
+
+### Patch Changes
+
+- 7530f861: fix (@ai-sdk/openai): add internal dist to bundle
+
+## 0.0.25
+
+### Patch Changes
+
+- 8b1362a7: chore (@ai-sdk/openai): expose models under /internal for reuse in other providers
+
+## 0.0.24
+
+### Patch Changes
+
+- 0e78960c: fix (@ai-sdk/openai): make function name and arguments nullish
+
+## 0.0.23
+
+### Patch Changes
+
+- a68fe74a: fix (@ai-sdk/openai): allow null tool_calls value.
+
+## 0.0.22
+
+### Patch Changes
+
+- Updated dependencies [102ca22f]
+  - @ai-sdk/provider@0.0.10
+  - @ai-sdk/provider-utils@0.0.13
+
+## 0.0.21
+
+### Patch Changes
+
+- fca7d026: feat (provider/openai): support streaming tool calls that are sent in one chunk
+- Updated dependencies [09295e2e]
+- Updated dependencies [09295e2e]
+- Updated dependencies [043a5de2]
+  - @ai-sdk/provider@0.0.9
+  - @ai-sdk/provider-utils@0.0.12
+
+## 0.0.20
+
+### Patch Changes
+
+- a1d08f3e: fix (provider/openai): handle error chunks when streaming
+
+## 0.0.19
+
+### Patch Changes
+
+- beb8b739: fix (provider/openai): return unknown finish reasons as unknown
+
 ## 0.0.18
 
 ### Patch Changes
