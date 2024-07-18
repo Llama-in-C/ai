@@ -103,6 +103,19 @@ export function createAphroditeEngine(
             headers: getHeaders,
         });
 
+    const getModels = async () => {
+        const response = await fetch(`${baseURL}/models/v1`, {
+            headers: getHeaders(),
+        });
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch models: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        return data.models;
+    };
+
     const provider = function (
         modelId: AphroditeEngineModelId,
         settings?: AphroditeEngineSettings,
@@ -118,6 +131,7 @@ export function createAphroditeEngine(
 
     provider.chat = createChatModel;
     provider.embedding = createEmbeddingModel;
+    provider.getModels = getModels;
 
     return provider as AphroditeEngineProvider;
 }
