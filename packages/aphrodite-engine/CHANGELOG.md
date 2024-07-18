@@ -1,5 +1,10 @@
 # @aphrodite-engine-provider
 
+## 0.2.2
+
+    - Fixed bug where getModel() method was not returning correctly 100% of the time.
+    - error will still occur when trying to use getModel() pass "default" in as modelName until a fix is created.
+
 ## 0.2.1
     - Fixed bug where getModel() was not accessible.
 

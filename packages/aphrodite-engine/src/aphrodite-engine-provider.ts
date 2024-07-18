@@ -39,7 +39,7 @@ export interface AphroditeEngineProvider {
     /**
      Retrieves the available language models from the Aphrodite Engine API.
      */
-    getModels(): Promise<Array<{ id: string; name: string }>>;
+    getModels(): string;
 }
 
 export interface AphroditeEngineProviderSettings {
@@ -108,8 +108,8 @@ export function createAphroditeEngine(
             headers: getHeaders,
         });
 
-    const getModels = async () => {
-        const response = await fetch(`${baseURL}/models/v1`, {
+    const getModels = async (): Promise<string> => {
+        const response = await fetch(`${baseURL}/models`, {
             headers: getHeaders(),
         });
 
@@ -117,8 +117,8 @@ export function createAphroditeEngine(
             throw new Error(`Failed to fetch models: ${response.statusText}`);
         }
 
-        const data = await response.json();
-        return data.models;
+        const modelData = await response.json();
+        return modelData.data["id"];
     };
 
     const provider = function (
@@ -138,6 +138,7 @@ export function createAphroditeEngine(
     provider.embedding = createEmbeddingModel;
     provider.getModels = getModels;
 
+    // @ts-ignore
     return provider as AphroditeEngineProvider;
 }
 
