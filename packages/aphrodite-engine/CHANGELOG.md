@@ -1,5 +1,8 @@
 # @aphrodite-engine-provider
 
+## 0.2.1
+    - Fixed bug where getModel() was not accessible.
+
 ## 0.2.0
     - Dynamic Model Name
         - Allows for the model to be swapped out and dynamically loaded without changing configurations.

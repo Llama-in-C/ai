@@ -35,6 +35,11 @@ export interface AphroditeEngineProvider {
         modelId: AphroditeEngineEmbeddingModelId,
         settings?: AphroditeEngineEmbeddingSettings,
     ): AphroditeEngineEmbeddingModel;
+
+    /**
+     Retrieves the available language models from the Aphrodite Engine API.
+     */
+    getModels(): Promise<Array<{ id: string; name: string }>>;
 }
 
 export interface AphroditeEngineProviderSettings {
