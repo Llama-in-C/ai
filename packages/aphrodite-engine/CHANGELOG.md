@@ -1,5 +1,10 @@
 # @aphrodite-engine-provider
 
+## 0.2.3
+    - Fixed baseURL initialization to properly handle undefined values
+    - Improved error handling in getModels function
+    - Updated getModels to return array of model IDs
+
 ## 0.2.2
 
     - Fixed bug where getModel() method was not returning correctly 100% of the time.
